@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Expense Tracker</h1>
+    </header>
+
+    <main>
+        <form id="expense-form">
+            <h2 id="form-title">Add an expense</h2>
+
+            <label for="title">What did you spend on?</label>
+            <input type="text" id="title" placeholder="e.g Lunch">
+
+            <label for="amount">Amount</label>
+            <input type="number" id="amount" placeholder="0.00">
+
+            <label for="category">Category</label>
+            <select id="category">
+                <option value="food">Food</option>
+                <option value="travel">Travel</option>
+                <option value="study">Study</option>
+                <option value="other">Other</option>
+            </select>
+
+            <div class="buttons">
+                <button type="submit" id="submit-btn">Save expense</button>
+                <button type="button" id="cancel-edit">Cancel edit</button>
+            </div>
+        </form>
+
+        <!-- Total box: updated by renderExpenses() -->
+        <div id="total-box">
+            <span id="spent">Total spent : </span>
+            <span id="total-value">0.00</span>
+        </div>
+
+        <!-- card list are here -->
+        <div id="expense-list"></div>
+        <p id="empty-msg">No expenses yet. Add your first one above.</p>
+    </main>
+</body>
+
+</html>

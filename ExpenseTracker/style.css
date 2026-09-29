@@ -1,0 +1,228 @@
+   :root {
+       --ink: #16231f;
+       --paper: #f6f4ee;
+       --moss: #2f5d50;
+       --moss-dark: #1f4038;
+       --clay: #c1652f;
+       --line: #d9d4c6;
+   }
+
+   * {
+       box-sizing: border-box;
+   }
+
+   body {
+       margin: 0;
+       background: var(--paper);
+       color: var(--ink);
+       font-family: -apple-system, "Segoe UI", Roboto, sans-serif;
+       line-height: 1.6;
+       padding-bottom: 3rem;
+   }
+
+   header {
+       background: var(--moss);
+       padding: 0.1rem 1rem;
+       text-align: center;
+       color: var(--line)
+   }
+
+   header h1 {
+       font-size: 1.5rem;
+       margin: 0;
+   }
+
+
+   main {
+       /* background-color: red; */
+       max-width: 600px;
+       margin: 0 auto;
+       padding: 1.5rem 1rem;
+       /* display: grid; */
+       /* grid-template-columns: repeat(600px ,1fr); */
+
+   }
+
+   #expense-form {
+       border: 1px solid var(--line);
+       box-shadow: 0 0 0.4rem 0.2rem var(--line);
+       padding: 2rem;
+       background: white;
+       margin-bottom: 1.5rem;
+       display: grid;
+       gap: 0.5rem;
+
+   }
+
+   #expense-form h2 {
+       color: var(--moss);
+       text-align: center;
+       font-size: 1.5rem;
+       font-weight: bold;
+       margin: 0;
+   }
+
+
+   #expense-form label {
+       font-size: 0.85rem;
+       font-weight: 600;
+       color: var(--moss-dark);
+   }
+
+   #expense-form input,
+   #expense-form select {
+       width: 100%;
+       padding: 0.5rem;
+       border-radius: 6px;
+       outline: none;
+       border: 1px solid var(--line);
+       font-family: inherit;
+       font-size: 1rem;
+
+
+   }
+
+   #expense-form button {
+       padding: 0.5rem 1.2rem;
+       background: var(--moss);
+       color: white;
+       border: none;
+       border-radius: 5px;
+       margin-bottom: 1rem;
+       cursor: pointer;
+       justify-self: start;
+   }
+
+   #expense-form button:hover {
+       background: var(--ink);
+
+   }
+
+   #cancel-btn {
+       /* display: none; */
+       background-color: #999 !important;
+       /* margin-left: 0.5rem; */
+
+   }
+
+   #total-box {
+       text-align: center;
+       background-color: var(--moss);
+       padding:1rem;
+       border-radius: 0.7rem;
+
+
+   }
+
+   #spent {
+
+       font-weight: 700;
+       font-size: 1.5rem;
+       color: var(--clay);
+   }
+
+   #total-value {
+       font-weight: 700;
+       font-size: 1.5rem;
+       color: var(--clay)
+   }
+
+   #empty-msg {
+       text-align: center;
+       color: #888;
+   }
+
+
+   #expense-list {
+    margin-top: 12px;
+    /* width: 100%; */
+       /* background-color: red; */
+       display: grid;
+       /* grid-template-columns: repeat(3,1fr); */
+       gap:1rem;
+
+
+   }
+
+   .card {
+       /* display: grid; */
+
+       border: 1px solid var(--line);
+       background: white;
+       border-radius: 10px;
+       padding: 2rem;
+
+   }
+
+   .card h3 {
+       font-size: 1.15rem;
+       color: var(--moss-dark);
+       margin: 0.3rem 0;
+
+       /* font-weight: 700; */
+
+
+   }
+
+   .badge {
+       background: var(--line);
+       font-size: 0.75rem;
+       padding: 0.2rem 0.5rem;
+       border-radius: 999px;
+       display: inline-block;
+       font-weight: 500;
+
+
+   }
+
+   .card button {
+       padding: 0.4rem 0.9rem;
+       font-size: 0.83rem;
+       border: none;
+       border-radius: 5px;
+       cursor: pointer;
+       margin-top: 0.5rem;
+       margin-right: 0.4rem;
+       color: white;
+
+   }
+
+
+
+   .edit-btn {
+       background: var(--clay);
+   }
+
+   .delete-btn {
+       background: #a8462f;
+   }
+
+   .amount {
+
+       color: var(--clay);
+       font-weight: 600;
+
+
+   }
+
+
+
+
+   @media (max-width:480px) {
+       main {
+           padding: 1rem 0.75rem;
+
+       }
+
+       #expense-form button {
+           width: 100%;
+           justify-self: stretch;
+       }
+
+       #cancel-edit {
+           margin-left: 0;
+           margin-top: 0.5rem;
+       }
+
+       }
+   
