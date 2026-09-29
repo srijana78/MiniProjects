@@ -7,7 +7,7 @@ A simple, no-framework expense tracker built with **vanilla HTML, CSS, and JavaS
 ![HTML5](https://img.shields.io/badge/HTML-5-orange)
 ![CSS3](https://img.shields.io/badge/CSS-3-blue)
 
- (   🔗 **[Live Demo](https://srijana78.github.io/jsProjects/ExpenseTracker/)**)
+ (   🔗 **[Live Demo](https://srijana78.github.io/MiniProjects/ExpenseTracker/)**)
  
 
 ## ✨ Features
