@@ -1,0 +1,117 @@
+
+        :root {
+            --ink: #16231f;
+            --paper: #f6f4ee;
+            --moss: #2f5d50;
+            --moss-dark: #1f4038;
+            --line: #d9d4c6;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: var(--paper);
+            color: var(--ink);
+            font-family: -apple-system, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+            padding-bottom: 3rem;
+        }
+
+        header {
+            background: var(--moss);
+            color: var(--paper);
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        main {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 1.5rem 1rem;
+        }
+
+        #book-form {
+            background: white;
+            border: 1px solid var(--line);
+            border-radius: 10px;
+            padding: 1.2rem;
+            margin-bottom: 2rem;
+            display: grid;
+            gap: 0.8rem;
+        }
+
+        #book-form label {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--moss-dark);
+        }
+
+        #book-form input,
+        #book-form select,
+        #book-form textarea {
+            width: 100%;
+            padding: 0.55rem;
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            font-family: inherit;
+        }
+
+        #book-form button {
+            padding: 0.6rem 1.2rem;
+            background: var(--moss);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            justify-self: start;
+        }
+
+        #cancel-edit {
+            background: #999;
+            display: none;
+            margin-left: 0.5rem;
+        }
+
+        .book-card {
+            background: white;
+            border: 1px solid var(--line);
+            border-radius: 10px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .badge {
+            font-size: 0.75rem;
+            padding: 0.2rem 0.6rem;
+            border-radius: 999px;
+            background: var(--line);
+            display: inline-block;
+            margin-bottom: 0.5rem;
+        }
+
+        .book-card button {
+            padding: 0.35rem 0.8rem;
+            font-size: 0.8rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 0.4rem;
+        }
+
+        .edit-btn {
+            background: #c1652f;
+            color: white;
+        }
+
+        .delete-btn {
+            background: #a8462f;
+            color: white;
+        }
+
+        #empty-msg {
+            text-align: center;
+            color: #888;
+        }
