@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+    DevLog Starter
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <h2> Dvelog</h2>
+        <p>A permanent record of every project - pseudocode, code, ReadMe, ad notes , in one place</p>
+    </header>
+
+      <main>
+
+        <form id="entry-form" class="entry-form">
+
+            <h2 id="form-title">Log a new project</h2>
+
+            <label for="title">Title</label>
+            <input type="text" id="title" required placeholder="e.g. Weather App">
+
+            <div class="row">
+                <div>
+                    <label for="status">Status</label>
+                    <select id="status">
+                        <option value="Idea">Idea</option>
+                        <option value="In-Progress">In Progress</option>
+                        <option value="Done">Done</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="techStack">Tech stack (comma-separated)</label>
+                    <input type="text" id="techStack" placeholder="HTML, CSS, JS">
+                </div>
+            </div>
+
+            <label for="pseudocode">Pseudocode</label>
+            <textarea id="pseudocode" placeholder="Plain-English plan before you coded anything"></textarea>
+
+            <label for="code">Code snippet(s)</label>
+            <textarea id="code"
+                placeholder="Paste the part of the code you're proud of, or want to remember"></textarea>
+
+            <label for="readme">README notes</label>
+            <textarea id="readme" placeholder="What the project does, how to run it, what you learned"></textarea>
+
+            <label for="notes">Extra notes</label>
+            <textarea id="notes" placeholder="Bugs you hit, things to improve, ideas for v2"></textarea>
+
+            <div>
+                <button type="submit" id="submit-btn" class="btn">Save entry</button>
+                <button type="button" id="cancel-edit" class="btn btn-cancel">Cancel edit</button>
+            </div>
+
+        </form>
+
+        <div id="entries-list" class="entries-list"></div>
+        <p id="empty-msg">No projects logged yet - add your first one above.</p>
+
+    </main>
+
+</body>
+</html>

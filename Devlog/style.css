@@ -1,0 +1,139 @@
+/* Maintainable theme */
+:root {
+    --ink: #16231f;
+    --paper: #f6f4ee;
+    --moss: #2f5d50;
+    --moss-dark: #1f4038;
+    --clay: #c1652f;
+    --line: #d9d4c6;
+    --font-display: "Georgia", serif;
+    --font-body: -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--font-body);
+    line-height: 1.6;
+    padding-bottom: 4rem;
+}
+
+header {
+    background: var(--moss);
+    color: var(--paper);
+    padding: 2rem 1.5rem;
+    text-align: center;
+}
+
+header h1 {
+    font-family: var(--font-display);
+    margin: 0 0 0.3rem;
+}
+
+header p {
+    margin: 0;
+    opacity: 0.85;
+    font-size: 0.95rem;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 780px;
+    padding: 2rem 1.2rem;
+}
+
+.entry-form {
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem 0.4rem var(--line);
+    padding: 1.5rem;
+    background: white;
+    margin-bottom: 2.5rem;
+    display: grid;
+    gap: 0.9rem;
+}
+
+.entry-form h2 {
+    margin: 0 0 0.3rem;
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+}
+
+.entry-form label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--moss-dark);
+}
+
+.entry-form input,
+.entry-form select,
+.entry-form textarea {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid var(--line);
+    border-radius: 0.4rem;
+    font-family: inherit;
+    color: var(--ink);
+    font-size: 0.92rem;
+}
+
+.entry-form textarea {
+    resize: vertical;
+    min-height: 70px;
+    font-family: monospace;
+}
+
+.entry-form .row {
+    display: grid;
+    gap: 0.9rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 560px) {
+    .entry-form .row {
+        grid-template-columns: 1fr;
+    }
+}
+
+.entry-form .btn {
+    padding: 0.7rem 1.4rem;
+    background: var(--moss);
+    color: white;
+    border: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    font-size: 0.95rem;
+    justify-self: start;
+}
+
+.entry-form .btn:hover {
+    background: var(--moss-dark);
+}
+
+.entry-form .btn-cancel {
+    background: #999;
+    display: none;
+    margin-left: 0.6rem;
+}
+
+#empty-msg {
+    text-align: center;
+    color: #888;
+    padding: 2rem 0;
+}
+
+#entries-list {
+    display: grid;
+    gap: 1.2rem;
+}
+
+.entry-card {
+    background: white;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 1.3rem;
+}
