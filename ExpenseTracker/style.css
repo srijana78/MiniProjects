@@ -34,12 +34,11 @@
 
 
    main {
-       /* background-color: red; */
+       
        max-width: 600px;
        margin: 0 auto;
        padding: 1.5rem 1rem;
-       /* display: grid; */
-       /* grid-template-columns: repeat(600px ,1fr); */
+       
 
    }
 
@@ -135,17 +134,15 @@
 
    #expense-list {
     margin-top: 12px;
-    /* width: 100%; */
-       /* background-color: red; */
+   
        display: grid;
-       /* grid-template-columns: repeat(3,1fr); */
        gap:1rem;
 
 
    }
 
    .card {
-       /* display: grid; */
+    
 
        border: 1px solid var(--line);
        background: white;
@@ -158,9 +155,6 @@
        font-size: 1.15rem;
        color: var(--moss-dark);
        margin: 0.3rem 0;
-
-       /* font-weight: 700; */
-
 
    }
 
